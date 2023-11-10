@@ -2,7 +2,7 @@ import requests
 from datetime import datetime
 import json
 def get_weather_info(city):
-    MY_KEY ='You Token'
+    MY_KEY ='You token'
 
     URL = f'https://api.openweathermap.org/data/2.5/weather'
     PARAMETERS = {
@@ -18,12 +18,12 @@ def get_weather_info(city):
     sunrset = datetime.utcfromtimestamp(res['sys']['sunset'] + timezone).strftime('%H:%M:%S %D-%M-%Y')
     wind = res['wind']['speed']
 
-    print(f"""Siz kritgan: {city.title()} da
-Havo harorati: {temp} selsiyada
-Ob-Havo: {weather}
-Quyosh chqishi: {sunrise}
-Quyosh botidhi: {sunrset}
-Shamol tezligi: {wind} m/s""")
+    print(f"""Siz kritgan:🏙 {city.title()} da
+Havo harorati:🌡 {temp} selsiyada
+Ob-Havo:🌤 {weather}
+Quyosh chqishi:🌅 {sunrise}
+Quyosh botidhi:🌅 {sunrset}
+Shamol tezligi:💨 {wind} m/s""")
 
 while True:
     print('------------------------------------------')
@@ -36,3 +36,16 @@ while True:
         print('Bunday shaxar topilmadi qayta urinib koring!')
     except Exception as p:
         print(p.__class__)
+
+
+
+
+
+
+
+
+
+
+
+
+
