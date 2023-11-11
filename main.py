@@ -8,7 +8,7 @@ def get_weather_info(city):
     PARAMETERS = {
         'q': city,
         'appid': MY_KEY
-    }
+       }
     KELVIN = 273.15
     res = requests.get(URL, params=PARAMETERS).json()
     temp = round(res['main']['temp'] - KELVIN, 2)
