@@ -1,6 +1,6 @@
 import requests
 from datetime import datetime
-import json
+
 def get_weather_info(city):
     MY_KEY ='You token'
     URL = f'https://api.openweathermap.org/data/2.5/weather'
